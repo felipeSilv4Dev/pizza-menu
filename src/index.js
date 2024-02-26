@@ -58,9 +58,7 @@ function App() {
 }
 
 function Header() {
-  // const style = { color: "red", fontSize: "48px", textTransform: "uppercase" };
   return (
-    // <h1 style={style} > Fast React Pizza Company </h1>
     <header className="header">
       <h1>Fast React Pizza Company</h1>
     </header>
@@ -68,31 +66,27 @@ function Header() {
 }
 
 function Menu() {
+  const pizzas = pizzaData;
+  const numPizzas = pizzas.length;
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <ul className="pizzas">
-        {pizzaData.map((pizza) => (
-          <Pizza key={pizza.name} {...pizza} />
-        ))}
-      </ul>
-      {/* <Pizza
-        name="Pizza Spinatch"
-        ingredients="tomato , mozarella, spinach and ricotta chesse"
-        photoName="pizzas/spinaci.jpg"
-        price={10}
-      />
 
-      <Pizza
-        name="Pizza Funghi"
-        ingredients="Tomato, mushrooms"
-        price={12}
-        photoName="pizzas/funghi.jpg"
-      /> */}
+      {numPizzas > 0 ? (
+        <ul className="pizzas">
+          {pizzas.map((pizza) => (
+            <Pizza key={pizza.name} {...pizza} />
+          ))}
+        </ul>
+      ) : (
+        <p>We're still working on our menu. Please come back later :) </p>
+      )}
     </main>
   );
 }
-function Pizza({ name, ingredients, photoName, price }) {
+function Pizza({ name, ingredients, photoName, price, soldOut }) {
+  if (soldOut) return null;
+
   return (
     <li className="pizza">
       <img src={photoName} alt={name} />
@@ -106,21 +100,25 @@ function Pizza({ name, ingredients, photoName, price }) {
 }
 
 function Footer() {
-  // const hour = new Date().getHours();
-  // const openHour = 12;
-  // const closeHour = 22;
-  // const isOpen = hour >= openHour && hour <= closeHour;
-
-  // console.log(isOpen);
-  // alert("We're currently open!");
-  // else alert("Sorry we're closed");
+  const hour = new Date().getHours();
+  const openHour = 12;
+  const closeHour = 22;
+  const isOpen = hour >= openHour && hour <= closeHour;
 
   return (
     <footer className="footer">
-      {new Date().toLocaleTimeString()} We're currently open
+      {isOpen ? (
+        <div className="order">
+          <p>we're open untill {closeHour}:00.Come visit us or order online.</p>
+          <button className="btn">Order</button>
+        </div>
+      ) : (
+        <p>
+          We're happy to welcome you between {openHour}:00 and {closeHour}:00.
+        </p>
+      )}
     </footer>
   );
-  // return React.createElement("footer", null, "We're currently open!");
 }
 
 // React v18
