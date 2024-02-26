@@ -73,11 +73,17 @@ function Menu() {
       <h2>Our Menu</h2>
 
       {numPizzas > 0 ? (
-        <ul className="pizzas">
-          {pizzas.map((pizza) => (
-            <Pizza key={pizza.name} {...pizza} />
-          ))}
-        </ul>
+        <>
+          <p>
+            Authentic Italian cuisine 6 crate dishes to choose from. All from
+            our stone oven ,all organic all delicious.
+          </p>
+          <ul className="pizzas">
+            {pizzas.map((pizza) => (
+              <Pizza key={pizza.name} {...pizza} />
+            ))}
+          </ul>
+        </>
       ) : (
         <p>We're still working on our menu. Please come back later :) </p>
       )}
@@ -108,16 +114,22 @@ function Footer() {
   return (
     <footer className="footer">
       {isOpen ? (
-        <div className="order">
-          <p>we're open untill {closeHour}:00.Come visit us or order online.</p>
-          <button className="btn">Order</button>
-        </div>
+        <Order closeHour={closeHour} />
       ) : (
         <p>
           We're happy to welcome you between {openHour}:00 and {closeHour}:00.
         </p>
       )}
     </footer>
+  );
+}
+
+function Order({ closeHour }) {
+  return (
+    <div className="order">
+      <p>we're open untill {closeHour}:00.Come visit us or order online.</p>
+      <button className="btn">Order</button>
+    </div>
   );
 }
 
