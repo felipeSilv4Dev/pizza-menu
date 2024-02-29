@@ -1,16 +1,16 @@
 # Pizza Menu
 
-<div align="center" >
-<img align="start" src="./public/pizzas/pizza.png" height='120' >
+<div align="start" >
+<img align="start" src="./public/pizzas/pizza.png"  height='400' >
 
 </div>
 
 <p>Pizza Menu</p>
 
 <p>
-  <img src="https://img.shields.io/badge/made%20by-Felipe%20Silva-fb1?style=flat-square">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/FelipeSilv4Dev/dog?color=fb1&style=flat-square">
-  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/FelipeSilv4Dev/dog?color=fb1&style=flat-square">
+  <img src="https://img.shields.io/badge/made%20by-Felipe%20Silva-edc84b?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/FelipeSilv4Dev/dog?color=edc84b&style=flat-square">
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/FelipeSilv4Dev/dog?color=edc84b&style=flat-square">
 </p>
 
 <br>
@@ -43,7 +43,7 @@ Siga os passos abaixo:
 
 ```bash
 # Abra um terminal e copie este repositório com o comando
-$ git clone https://github.com/felipesilv4dev/pizza.git
+$ git clone https://github.com/felipesilv4dev/pizza-menu.git
 # ou use a opção de download.
 
 # Entre na pasta com
