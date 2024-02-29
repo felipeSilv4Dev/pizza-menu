@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Pizza Menu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center" >
+<img align="start" src="./public/pizzas/pizza.png" height='120' >
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+<p>Pizza Menu</p>
 
-### `npm start`
+<p>
+  <img src="https://img.shields.io/badge/made%20by-Felipe%20Silva-fb1?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/FelipeSilv4Dev/dog?color=fb1&style=flat-square">
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/FelipeSilv4Dev/dog?color=fb1&style=flat-square">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+## Tecnologias e Ferramentas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 
-### `npm run build`
+- [HTML](https://devdocs.io/html/)
+- [CSS](https://devdocs.io/css/)
+- [JavaScript](https://devdocs.io/javascript/)
+- [React Js](https://devdocs.io/Reactjs/)
+- [styled-components](https://devdocs.io/styled-components/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Design
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O design da pagina é feito de cores que leves que atraem o público.
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Instalação e Uso
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para rodar a aplicação, você precisa instalar o [Node](https://nodejs.org/en/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Siga os passos abaixo:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Abra um terminal e copie este repositório com o comando
+$ git clone https://github.com/felipesilv4dev/pizza.git
+# ou use a opção de download.
 
-## Learn More
+# Entre na pasta com
+$ cd PIZZA-MENU
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Instale as dependências
+$ npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Rode a aplicação
+$ npm run dev
+```
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Feito com :yellow_heart: by [Felipe_Silva](https://github.com/felipeSilv4dev)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ <div align="start">
+  <a href='http://www.linkedin.com/in/felipe-silva-1019ab271' target'_blank'><img src='https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white'</a>
+  <a href="mailto:felipesantana18n@gmail.com" target='_blank'><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"> </a>
+</div>
